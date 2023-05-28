@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
 
 * {
     padding: 0;
@@ -253,7 +253,7 @@ img {
 /* change color  */
 
 #colorBtn {
-    font-family: 'Rubik Wet Paint', cursive;
+    font-family: 'Sigmar One', cursive;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -262,4 +262,5 @@ img {
     border: 3px solid transparent;
     box-shadow: 0 0 10px 5px rgba(115, 58, 213, 0.7);
     border-radius: 15px;
+    font-size: 12px;
 }
