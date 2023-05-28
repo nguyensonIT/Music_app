@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>3D Box</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="card"><img src="./img/img (1).jpg" alt="" /></div>
+        <div class="card"><img src="./img/img (2).jpg" alt="" /></div>
+        <div class="card"><img src="./img/img (3).jpg" alt="" /></div>
+        <div class="card"><img src="./img/img (4).jpg" alt="" /></div>
+        <div class="card"><img src="./img/img (5).jpg" alt="" /></div>
+        <div class="card"><img src="./img/img (6).jpg" alt="" /></div>
+    </div>
+    <div class="audio-player">
+        <audio id="myAudio">
+            <source data-name="AnneMarie  2002 Official" src="./audio/y2mate.com - AnneMarie  2002 Official Video.mp3"
+                type="audio/mpeg">
+            <source data-name="TO THE MOON  hooligan Official Lyric"
+                src="./audio/y2mate.com - TO THE MOON  hooligan Official Lyric Video.mp3" type="audio/mpeg">
+            <source data-name="Perfect  Ed Sheeran  Lyrics"
+                src="./audio/y2mate.com - Vietsub  Perfect  Ed Sheeran  Lyrics Video.mp3" type="audio/mpeg">
+            <source data-name="Bài này quên tên" src="./audio/audio1.mp3" type="audio/mpeg">
+            <source data-name="Bài này nhạc trung" src="./audio/tab2.mp3" type="audio/mpeg">
+            <source data-name="Anh Đã Từ Bỏ Rồi Đấy   Nguyenn x aric1407   Official Music"
+                src="./audio/y2mate.com - Anh Đã Từ Bỏ Rồi Đấy   Nguyenn x aric1407   Official Music Video.mp3"
+                type="audio/mpeg">
+            <source data-name="Chỉ Là Muốn Nói 300  Khải" src="./audio/y2mate.com - Chỉ Là Muốn Nói 300  Khải.mp3"
+                type="audio/mpeg">
+            <source data-name="Hayd  Head In The Clouds Official"
+                src="./audio/y2mate.com - Hayd  Head In The Clouds Official Video.mp3" type="audio/mpeg">
+            <source data-name="Hẹn Em Ở Lần Yêu Thứ 2  Nguyenn x DangtuanvuOriginal   Official"
+                src="./audio/y2mate.com - Hẹn Em Ở Lần Yêu Thứ 2  Nguyenn x DangtuanvuOriginal   Official MV  Anh phải làm gì để em.mp3"
+                type="audio/mpeg">
+            <source data-name="LỖI TẠI ANH  ALEX LAM" src="./audio/y2mate.com - LỖI TẠI ANH  ALEX LAM.mp3"
+                type="audio/mpeg">
+            <source data-name="Maroon 5  Memories Official"
+                src="./audio/y2mate.com - Maroon 5  Memories Official Video.mp3" type="audio/mpeg">
+        </audio>
+        <div class="songTitle-container">
+            <button id="colorBtn" onclick="changeBackgroundColor()">Thay đổi màu nền</button>
+            <div class="songTitle-box">
+                <div id="songTitle" class=""></div>
+            </div>
+
+        </div>
+        <div class="custom-controls">
+            <input type="range" id="progressBar" min="0" value="0" step="1" onchange="updateProgressBar()">
+            <div class="custom-btn">
+                <button id="prevBtn" onclick="playPrevious()"><i class="fa-solid fa-backward"></i></button>
+                <button id="playBtn" onclick="togglePlayPause()"><i class="fa-solid fa-play"></i></button>
+                <button onclick="playNext()"><i class="fa-solid fa-forward"></i></button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
